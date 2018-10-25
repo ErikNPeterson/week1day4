@@ -1,8 +1,8 @@
 // The second argument/parameter is expected to be a function
-function findWaldo(inputArray, found) {
+function findWaldo(inputArray, callback) {
   inputArray.forEach((item, index) => {
     if (item === "Waldo") {
-      found(index);   // execute callback
+      callback(index);   // execute callback
     }
   });   
 }
